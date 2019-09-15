@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta charset="utf-8">
+	<title>Cat Clicker</title>
+	<h1>Cat Clicker</h1>
+</head>
+<body>
+	<ul id="cat-list"></ul>
+
+	<div id="cat">
+		<h2 id="cat-name"></h2>
+		<div id="cat-count"></div>
+		<img id="cat-image" src="">
+	</div>
+
+	<div>
+		<button id="enableAdmin" onclick="adminView.enableAdmin()">Admin Mode</button>
+		<br>
+		<br>
+
+		<div id="adminForm">
+			<form action="javascript:adminView.setCatData()">
+				Cat: <br>
+				<input type="text" name="" value="" id="cat-name-input">
+				<br>
+				Image Link: <br>
+				<input type="text" name="" value="" id="cat-image-link-input">
+				<br>
+				Click Count: <br>
+				<input type="text" name="" value="" id="cat-click-count-input">
+
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
